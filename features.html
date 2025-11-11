@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features | SportsConnect</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="navbar" class="navbar transparent">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906334.png" alt="logo">
+      SportsConnect
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="contact.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header -->
+  <section class="page-header fade-in">
+    <h1>Football-Focused Digital Features</h1>
+    <p>Everything inside SportsConnect is built to serve the modern game — data transparency, verified talent, and smart networking.</p>
+  </section>
+
+  <!-- Feature cards -->
+  <section class="feature-grid fade-in">
+    <div class="feature-item">
+      <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80" alt="Training">
+      <h3>Verified Player Profiles</h3>
+      <p>Every footballer owns a trusted digital ID containing verified match stats, highlights, and coaching endorsements, ensuring fair exposure to scouts and clubs.</p>
+    </div>
+
+    <div class="feature-item">
+      <img src="https://images.unsplash.com/photo-1602809433191-1b3ab1c03b39?auto=format&fit=crop&w=900&q=80" alt="Scouting">
+      <h3>AI-Powered Scouting</h3>
+      <p>Scouts gain access to AI-driven analytics that compare players across regions, helping identify potential based on metrics, form, and fitness data.</p>
+    </div>
+
+    <div class="feature-item">
+      <img src="https://images.unsplash.com/photo-1579026963088-3ad65b6ecb9b?auto=format&fit=crop&w=900&q=80" alt="Community football">
+      <h3>Community Match Hub</h3>
+      <p>Local academies and grassroots clubs can schedule tournaments, share live updates, and publish verified results to strengthen community engagement.</p>
+    </div>
+  </section>
+
+  <!-- Player connect section -->
+  <section class="connect-section fade-in">
+    <h2>Connect with Football Talent</h2>
+    <p>Browse verified grassroots players and send direct connection requests.</p>
+
+    <div class="player-grid" id="playerGrid"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="connectModal" class="modal">
+    <div class="modal-content">
+      <h3 id="modalTitle">Connection Sent ✅</h3>
+      <p id="modalMessage">Your request has been sent successfully. The player will be notified.</p>
+      <button onclick="closeModal()" class="btn">Close</button>
+    </div>
+  </div>
+
+  <footer>© 2025 SportsConnect | Football Ecosystem Platform</footer>
+</body>
+</html>
